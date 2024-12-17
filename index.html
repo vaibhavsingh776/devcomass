@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Currency Converter on the internet</title>
+    <link rel="stylesheet" href="main.css">    
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+
+
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo-container border">
+            <img src="logo1.jpg" alt="Logo" class="site-logo">
+            <h1 class="text-4xl font-bold text-white-600">Currency Converter</h1>
+        </div>
+
+       
+
+        <nav class="navigation-menu">
+            <ul>
+                <li><a href="#arbit">Currency Arbitrage</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+
+    </header>
+    
+
+
+<main class="main-content">
+    <section class="currency-converter">
+        <form id="currency-form" class="converter-form">
+            <div class="input-group">
+                <label for="from-currency" class="input-label">From Currency:</label>
+                <select id="from-currency" name="from-currency" class="currency-select" required>
+                    <option value="USD">USD - United States Dollar</option>
+<option value="EUR">EUR - Euro</option>
+<option value="INR">INR - Indian Rupee</option>
+<option value="GBP">GBP - British Pound</option>
+<option value="AUD">AUD - Australian Dollar</option>
+<option value="CAD">CAD - Canadian Dollar</option>
+<option value="JPY">JPY - Japanese Yen</option>
+<option value="CHF">CHF - Swiss Franc</option>
+<option value="CNY">CNY - Chinese Yuan</option>
+<option value="MXN">MXN - Mexican Peso</option>
+<option value="SGD">SGD - Singapore Dollar</option>
+<option value="NZD">NZD - New Zealand Dollar</option>
+<option value="BRL">BRL - Brazilian Real</option>
+<option value="ZAR">ZAR - South African Rand</option>
+<option value="SEK">SEK - Swedish Krona</option>
+<option value="NOK">NOK - Norwegian Krone</option>
+<option value="DKK">DKK - Danish Krone</option>
+<option value="RUB">RUB - Russian Ruble</option>
+<option value="HKD">HKD - Hong Kong Dollar</option>
+<option value="KRW">KRW - South Korean Won</option>
+<option value="IDR">IDR - Indonesian Rupiah</option>
+<option value="MYR">MYR - Malaysian Ringgit</option>
+<option value="THB">THB - Thai Baht</option>
+<option value="TRY">TRY - Turkish Lira</option>
+<option value="SAR">SAR - Saudi Riyal</option>
+<option value="AED">AED - United Arab Emirates Dirham</option>
+
+
+<option value="BTC">BTC - Bitcoin</option>
+<option value="ETH">ETH - Ethereum</option>
+<option value="LTC">LTC - Litecoin</option>
+<option value="XRP">XRP - Ripple (XRP)</option>
+<option value="BCH">BCH - Bitcoin Cash</option>
+<option value="DOGE">DOGE - Dogecoin</option>
+<option value="SOL">SOL - Solana</option>
+<option value="ADA">ADA - Cardano</option>
+<option value="DOT">DOT - Polkadot</option>
+<option value="MATIC">MATIC - Polygon (Matic)</option>
+<option value="SHIB">SHIB - Shiba Inu</option>
+<option value="BNB">BNB - Binance Coin</option>
+<option value="USDT">USDT - Tether</option>
+<option value="USDC">USDC - USD Coin</option>
+<option value="XLM">XLM - Stellar</option>
+<option value="TRX">TRX - TRON</option>
+<option value="AVAX">AVAX - Avalanche</option>
+<option value="LINK">LINK - Chainlink</option>
+<option value="VET">VET - VeChain</option>
+<option value="DASH">DASH - Dash</option>
+<option value="MKR">MKR - Maker</option>
+<option value="FIL">FIL - Filecoin</option>
+<option value="AAVE">AAVE - Aave</option>
+ 
+                    
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="to-currency" class="input-label">To Currency:</label>
+                <select id="to-currency" name="to-currency" class="currency-select" required>
+                    <option value="USD">USD - United States Dollar</option>
+<option value="EUR">EUR - Euro</option>
+<option value="INR">INR - Indian Rupee</option>
+<option value="GBP">GBP - British Pound</option>
+<option value="AUD">AUD - Australian Dollar</option>
+<option value="CAD">CAD - Canadian Dollar</option>
+<option value="JPY">JPY - Japanese Yen</option>
+<option value="CHF">CHF - Swiss Franc</option>
+<option value="CNY">CNY - Chinese Yuan</option>
+<option value="MXN">MXN - Mexican Peso</option>
+<option value="SGD">SGD - Singapore Dollar</option>
+<option value="NZD">NZD - New Zealand Dollar</option>
+<option value="BRL">BRL - Brazilian Real</option>
+<option value="ZAR">ZAR - South African Rand</option>
+<option value="SEK">SEK - Swedish Krona</option>
+<option value="NOK">NOK - Norwegian Krone</option>
+<option value="DKK">DKK - Danish Krone</option>
+<option value="RUB">RUB - Russian Ruble</option>
+<option value="HKD">HKD - Hong Kong Dollar</option>
+<option value="KRW">KRW - South Korean Won</option>
+<option value="IDR">IDR - Indonesian Rupiah</option>
+<option value="MYR">MYR - Malaysian Ringgit</option>
+<option value="THB">THB - Thai Baht</option>
+<option value="TRY">TRY - Turkish Lira</option>
+<option value="SAR">SAR - Saudi Riyal</option>
+<option value="AED">AED - United Arab Emirates Dirham</option>
+
+
+
+                    
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="amount" class="input-label">Amount:</label>
+                <input type="number" id="amount" name="amount" class="input-field" placeholder="Enter amount" required>
+            </div>
+            <button type="submit" class="convert-btn">Convert</button>
+        </form>
+        <div id="result" class="result">
+            <div id="result" class="result">
+                <p id="conversion-text"></p>
+            </div>
+            
+        </div>
+    </section>
+
+  
+
+<!-- arbitrage wala part -->
+
+     <section id="arbit" class="currency-arbitrage">
+        <h2>Currency Arbitrage</h2>
+        
+        
+        <form id="arbitrage-form" class="arbitrage-form">
+            
+            <div class="input-group">
+                <label for="arbit-from-currency" class="input-label">From Currency:</label>
+                <select id="arbit-from-currency" name="arbit-from-currency" class="currency-select" required>
+                    <option value="USD">USD - United States Dollar</option>
+                    <option value="EUR">EUR - Euro</option>
+                    <option value="INR">INR - Indian Rupee</option>
+                    <option value="GBP">GBP - British Pound</option>
+                    <option value="AUD">AUD - Australian Dollar</option>
+                    <option value="CAD">CAD - Canadian Dollar</option>
+                    <option value="JPY">JPY - Japanese Yen</option>
+                    <option value="CHF">CHF - Swiss Franc</option>
+                    <option value="CNY">CNY - Chinese Yuan</option>
+                    <option value="MXN">MXN - Mexican Peso</option>
+                    <option value="SGD">SGD - Singapore Dollar</option>
+                    <option value="NZD">NZD - New Zealand Dollar</option>
+                    <option value="BRL">BRL - Brazilian Real</option>
+                    <option value="ZAR">ZAR - South African Rand</option>
+                    <option value="SEK">SEK - Swedish Krona</option>
+                    <option value="NOK">NOK - Norwegian Krone</option>
+                    <option value="DKK">DKK - Danish Krone</option>
+                    <option value="RUB">RUB - Russian Ruble</option>
+                    <option value="HKD">HKD - Hong Kong Dollar</option>
+                    <option value="KRW">KRW - South Korean Won</option>
+                    <option value="IDR">IDR - Indonesian Rupiah</option>
+                    <option value="MYR">MYR - Malaysian Ringgit</option>
+                    <option value="THB">THB - Thai Baht</option>
+                    <option value="TRY">TRY - Turkish Lira</option>
+                    <option value="SAR">SAR - Saudi Riyal</option>
+                    <option value="AED">AED - United Arab Emirates Dirham</option>
+                    
+                    
+                </select>
+            </div>
+            
+           
+            <div class="input-group">
+                <label for="arbit-to-currency" class="input-label">To Currency:</label>
+                <select id="arbit-to-currency" name="arbit-to-currency" class="currency-select" required>
+                    <option value="USD">USD - United States Dollar</option>
+<option value="EUR">EUR - Euro</option>
+<option value="INR">INR - Indian Rupee</option>
+<option value="GBP">GBP - British Pound</option>
+<option value="AUD">AUD - Australian Dollar</option>
+<option value="CAD">CAD - Canadian Dollar</option>
+<option value="JPY">JPY - Japanese Yen</option>
+<option value="CHF">CHF - Swiss Franc</option>
+<option value="CNY">CNY - Chinese Yuan</option>
+<option value="MXN">MXN - Mexican Peso</option>
+<option value="SGD">SGD - Singapore Dollar</option>
+<option value="NZD">NZD - New Zealand Dollar</option>
+<option value="BRL">BRL - Brazilian Real</option>
+<option value="ZAR">ZAR - South African Rand</option>
+<option value="SEK">SEK - Swedish Krona</option>
+<option value="NOK">NOK - Norwegian Krone</option>
+<option value="DKK">DKK - Danish Krone</option>
+<option value="RUB">RUB - Russian Ruble</option>
+<option value="HKD">HKD - Hong Kong Dollar</option>
+<option value="KRW">KRW - South Korean Won</option>
+<option value="IDR">IDR - Indonesian Rupiah</option>
+<option value="MYR">MYR - Malaysian Ringgit</option>
+<option value="THB">THB - Thai Baht</option>
+<option value="TRY">TRY - Turkish Lira</option>
+<option value="SAR">SAR - Saudi Riyal</option>
+<option value="AED">AED - United Arab Emirates Dirham</option>
+
+
+                </select>
+            </div>
+            
+            
+            
+            
+            <div class="text-center">
+                <button type="submit" class="convert-btn">Find Arbitrage Options</button>
+            </div>
+        </form>
+        <div id="arbitrage-result" class="mt-6 text-center">
+            <p id="arbitrage-text" class="text-lg font-semibold"></p>
+        </div>
+        
+     </section>
+ 
+
+
+
+</main>
+
+
+
+
+
+
+
+<footer class="footer">
+   
+    <section id="about">
+        <h2>About Us</h2>
+        <p>this is a first year student's assignment for the devcom recruitment.</p>
+    </section>
+   
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>my roll number is 24b2725</p>
+    </section>
+    
+</footer>
+
+
+<script src="mainscript.js"></script> 
+<script src="arbit.js"></script> 
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+</html>

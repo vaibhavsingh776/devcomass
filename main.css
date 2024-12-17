@@ -1,0 +1,245 @@
+
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #14df1b, #ff3c00, #1E88E5);
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: solid gold;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.site-logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.site-title {
+    font-size: 1.5rem;
+}
+
+.lmao {
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+.navigation-menu ul {
+    display: flex;
+    gap: 40px;
+}
+
+.navigation-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navigation-menu a:hover {
+    color: #FFD700;
+}
+
+.border {
+    border: 2px solid transparent;
+}
+
+.border:hover {
+    border: 2px solid rgb(255, 255, 255);
+}
+
+/* Main Content */
+.main-content {
+    padding: 0;
+    background-image: url(backg1.avif);
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid gold;
+}
+
+/* Currency Converter Section */
+.currency-converter {
+    width: 100%;
+    max-width: 700px; /* Set max-width for responsiveness */
+    margin: 20px auto;
+    background-color: rgb(5, 247, 243);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(228, 96, 98, 0.843);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.converter-form {
+    display: flex;
+    flex-direction: column; /* Changed from row to column for better alignment */
+    gap: 20px;
+    justify-content: center;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Ensure full width */
+}
+
+.input-label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.input-field,
+.currency-select {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1.5px solid #ccc;
+    border-radius: 30px;
+}
+
+.convert-btn {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: solid black;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; /* Button takes up full width */
+}
+
+.convert-btn:hover {
+    background-color: #34f409;
+}
+
+.result {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.4rem;
+    font-style: italic;
+    color: #000000;
+}
+
+/* Footer */
+footer {
+    background-color: #090847;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    border: 1.5px solid gold;
+    transition: opacity 0.3s ease-in-out;
+}
+
+footer:hover {
+    opacity: 0.85;
+    scale: 101%;
+    border: 1.5px solid gold;
+}
+
+
+.currency-arbitrage {
+    width: 100%;
+    max-width: 700px;
+
+    margin: 40px auto; 
+    background-color: #fffc58;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(228, 96, 98, 0.843);
+    
+}
+
+#arbit h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.arbitrage-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.currency-select,
+.input-field {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.input-field {
+    margin-top: 10px;
+}
+
+.convert-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; 
+}
+
+.convert-btn:hover {
+    background-color: #0056b3;
+}
+
+#arbitrage-result {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#arbitrage-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
